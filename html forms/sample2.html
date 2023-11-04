@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <style>
-    #go{
-        background-color:aqua;
-        width:500px ;
+    #go {
+        background-color: aqua;
+        width: 500px;
         height: 400px;
-        
-    }
-    #went{
+        border: 1px solid;
+        }
+    #went {
         background-color: chartreuse;
         width: 400px;
         height: 300px;
-        margin-top: 50px;
+        margin-top: 30px;
+        margin-left: 50px;
     }
-       
-
-        
 </style>
+
 <body>
     <div id="go">
         <div id="went">
             <form action="">
-                <label for="fname">fname</label>
-                <input type="text" id="fname">
-                <label for="lname">lname</label>
-                <input type="text" id="lname">
+                <label for="fname">first name:</label>
+                <input type="text" id="fname"> <br><br>
+                <label for="lname">last name:</label>
+                <input type="text" id="lname"><br><br>
+                <label for="g">Gender:</label>
+                <input type="radio" id="g" name="gender" value="male">male
+                <input type="radio" id="g" name="gender" value="female">Female
+                <input type="radio" id="g" name="gender" value="others">other <br><br>
+                <input type="submit" style="margin-left: 100px;">
             </form>
         </div>
     </div>
-    
+
 </body>
-</html> 
+
+</html>
