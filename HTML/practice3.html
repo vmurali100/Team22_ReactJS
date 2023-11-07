@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .div1, .div2, .div3{
+        display: flex;
+    }
+    .div1{
+        background-color: aquamarine;
+        height: 100px;
+    }
+    .div21{
+        flex: 1;
+        background-color: steelblue;
+        height: 500px;
+    }
+    .div22{
+        flex:2;
+        background-color: lightpink;
+        height: 500px;
+    }
+    .div3{
+        background-color: aquamarine;
+        height: 100px;
+    }
+    .div22{
+        display: flex;
+    }
+    .div221{
+        flex: 1;
+        background-color: lime;
+        padding: 30px;
+    }
+    .div222{
+        flex: 1;
+        background-color: lightcoral;
+        padding: 39px;
+    }
+    .div223{
+        flex: 1;
+        background-color: lightyellow;
+        padding: 30px;
+    }
+
+    p{
+        text-align: center;
+        font-weight: bold;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>Header</p>
+    </div>
+    <div class="div2">
+        <div class="div21">
+            <p>Aside</p>
+        </div>
+        <div class="div22">
+            <div class="div221"><p>Image</p></div>
+            <div class="div222"><p>Image</p></div>
+            <div class="div223"><p>Image</p></div>
+        </div>
+    </div>
+    <div class="div3">
+        <p>Footer</p>
+    </div>
+</body>
+</html>
