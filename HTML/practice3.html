@@ -17,39 +17,57 @@
         background-color: steelblue;
         height: 500px;
     }
-    .div22{
-        flex:2;
-        background-color: lightpink;
-        height: 500px;
-    }
+    .div22 {
+    flex: 2;
+    background-color: lightpink;
+    height: 500px;
+}
     .div3{
         background-color: aquamarine;
         height: 100px;
     }
-    .div22{
-        display: flex;
-    }
-    .div221{
-        flex: 1;
-        background-color: lime;
-        padding: 30px;
-    }
-    .div222{
-        flex: 1;
-        background-color: lightcoral;
-        padding: 39px;
-    }
-    .div223{
-        flex: 1;
-        background-color: lightyellow;
-        padding: 30px;
-    }
-
+    
+        
+    .div221 {
+    /* flex: 1; */
+    background-color: lime;
+    padding: 30px;
+    width: 15%;
+    height: 80px;
+    margin-top: 90px; 
+}
+.div222 {
+    /* flex: 1; */
+    background-color: lightcoral;
+    padding: 30px;
+    width: 15%;
+    height: 80px;
+    margin-top: 90px; 
+}
+    
+.div223 {
+    /* flex: 1; */
+    background-color: lightyellow;
+    padding: 30px;
+    width: 15%;
+    height: 80px;
+    margin-top: 90px;
+}
     p{
         text-align: center;
         font-weight: bold;
     }
-
+    .div22 p{
+        text-align: center;
+    }
+    .child{
+        display: flex;
+        justify-content:space-around;
+        width: 50%;
+        margin-top: 200px;
+        margin-left: 200px;
+        
+} 
     </style>
 </head>
 <body>
@@ -60,10 +78,12 @@
         <div class="div21">
             <p>Aside</p>
         </div>
-        <div class="div22">
+        <div class="div22"><p>Article</p>
+            <div class="child">
             <div class="div221"><p>Image</p></div>
             <div class="div222"><p>Image</p></div>
             <div class="div223"><p>Image</p></div>
+        </div>
         </div>
     </div>
     <div class="div3">
