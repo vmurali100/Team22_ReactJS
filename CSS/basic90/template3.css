@@ -13,6 +13,7 @@
   margin: 0 auto;
   width: 960px;
   overflow: auto;
+  text-decoration: none;
 }
 
 #header #hgroup {
@@ -26,6 +27,10 @@
 }
 #header #hgroup h1 {
   font-size: 36px;
+}
+#header #hgroup h1 a{
+  color: brown;
+  text-decoration: none;
 }
 #header #hgroup h2 {
   font-size: 13px;
@@ -48,7 +53,7 @@
   background-color: black;
   border: 1px solid gray;
 }
-#header form #sf_submit {
+#header form #submit_msg {
   display: block;
   float: right;
   width: 70px;
@@ -75,9 +80,11 @@
   display: inline;
   margin-right: 25px;
   text-transform: uppercase;
+
 }
 
 #header nav li a {
   color: #c0bab6;
   background-color: #232323;
+  text-decoration: none;
 }
