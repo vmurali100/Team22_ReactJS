@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper {
+        background: #333333;
+        color: #c0bab6;
+      }
+      #header {
+        display: flex;
+        padding: 20px;
+        margin: 0 auto;
+        width: 960px;
+      }
+      #hgroup {
+        flex: 1;
+      }
+      h1 {
+        font-weight: normal;
+      }
+      h2 {
+        font-weight: normal;
+        font-size: 14px;
+      }
+      .navbar {
+        flex: 2;
+        padding: 20px 0;
+        color: #c0bab6;
+        background-color: #232323;
+      }
+      .navbar ul li {
+        display: inline-block;
+        margin-right: 40px;
+      }
+      .navbar ul {
+        padding: 0 20px;
+      }
+
+      li a {
+        color: #c0bab6;
+        background: #232323;
+        text-decoration: none;
+      }
+      .navbar ul li button {
+        margin-left: 10px;
+        border: 1px solid black;
+        background-color: red;
+        color: white;
+        border-radius: 50px;
+        padding: 10px;
+      }
+      .middle {
+        width: 100%;
+        height: 500px;
+        background-image: url(./background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: scroll;
+        background-size: cover;
+        overflow: auto;
+        
+       
+      }
+    
+      .middle h1 {
+        padding-top: 100px;
+        color: white;
+        text-transform: uppercase;
+        padding-left: 300px;
+        font-size: 70px;
+      }
+      .middle h2 {
+        color: white;
+        text-transform: uppercase;
+        padding-left: 300px;
+        font-size: 30px;
+      }
+      .middle p {
+        font-size: 20px;
+        color: white;
+        padding-left: 390px;
+        justify-content: space-around;
+        padding-bottom: 30px;
+      }
+
+      .middle #button1 {
+        background-color: red;
+        color: white;
+        margin-right: 40px;
+        padding: 10px 40px;
+        border-radius: 20px;
+        float: right;
+      }
+      .middle #button2 {
+        background-color: grey;
+        color: white;
+        padding: 10px 40px;
+        border-radius: 20px;
+        float: right;
+      }
+      /* .middle h3{
+        height: 250px;
+        width:  200px;
+        border: 3px solid red;
+        border-right: none;
+        margin-left: 20px;
+      } */
+      .services{
+      
+        background-color: lightcyan;
+        
+      }
+
+      .services h6{
+        color: red;
+        text-align: center;
+        margin-bottom: 10px;
+    
+
+      }
+      .services h3{
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-bottom: 40px;
+      }
+      .services h5{
+        text-align: center;
+        color: black;
+        margin-bottom: 20px;
+      }
+      .services p{
+       text-align: center;
+        color: black;
+        margin-left: 100px;
+        margin-right: 100px;
+       
+      }
+      .container{
+        display: flex;
+        margin-top: 20px;
+       
+      }
+      .card1 , .card2, .card3, .card4, .card5 , .card6{
+         flex:1;
+      }
+      .card1, .card3, .card4, .card5,.card6{
+        background-color: white;
+        color: black;
+        font-size: 10px;
+        border: 1px solid gray;
+        border-radius: 20px;
+       
+        margin-left: 3px;
+        justify-content: space-around;
+    
+      }
+      .card2{
+        background-color: red;
+        color: white;
+        font-size: 10px;
+        border: 1px solid gray;
+        border-radius: 20px;
+       
+        margin-left: 3px;
+        justify-content: space-around;
+    
+      }
+      .fa-location-dot,  .fa-sim-card, .fa-mobile, .fa-twitter, .fa-thumbs-up{
+        font-size: 30px;
+        color: red;
+        padding-left: 110px;
+      }
+      .fa-users-between-lines{
+        font-size: 30px;
+        color: white;
+        padding-left: 110px;
+      }
+      .image_content{
+        display: flex;
+        color: black;
+        margin-top: 30px;
+       
+      }
+    .btn1{
+        background-color: gray;
+        color: white;
+        padding: 10px 40px;
+      }
+       .btn2{
+        background-color: red;
+        color: white;
+        padding: 10px 40px;
+      }
+      .content{
+        flex: 2;
+        margin-left: 50px;
+       
+      }
+     .image{
+        flex: 1;
+        
+     }
+     .image img{
+        width: 100%;
+        height: 600px;
+     }
+     .image_heading h3 {
+       margin-left: 40px;
+     }
+     .image_heading p{
+        margin-left: 40px;
+        text-align: justify;
+     }
+     .content ul li{
+        margin-bottom: 30px;
+     }
+     .elevate_section{
+        margin-top: 30px;
+        background-color: lightsteelblue
+     }
+      .elevate_section  .div1 h2{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+
+     }.elevate_section  .div1 p{
+        text-align: center;
+        font-size: small;
+        margin-bottom: 20px;
+     }
+
+     .parent1, .parent2{
+        display: flex;
+        /* margin-left: 40px; */
+     }
+      .child2, .child3, .child4, .child5, .child6{
+        flex: 1;
+        text-align: center;
+        height: 100px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 30px;
+     }
+     .child1{
+        flex:1;
+        text-align: center;
+        height: 100px;
+        background-color:red;
+        color: white;
+        margin: 10px;
+        border-radius: 30px;
+    
+     }
+     .child1,.child2, .child3 , .child4, .child5, .child6{
+        display: flex;
+     }
+     .child11,.child12, .child21, .child22, .child31,.child32,.child41, .child42, .child51, .child52,.child61,.child62{
+        flex:1;
+     }
+     .div3 h2{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 30px;
+     }
+     .div3 p{
+        text-align: center;
+        margin-bottom: 40px;
+     }
+
+    
+    </style>
+  </head>
+  <body>
+    <div class="main">
+    <div class="wrapper">
+      <div id="header">
+        <div id="hgroup">
+          <h1>Logistifie</h1>
+          <h2>Intelligent Booking and Bokking Software</h2>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="">Solutions</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Why Logistifie</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li>
+              <a href=""
+                ><button><i class="bi bi-person-circle"></i>Login</button></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+      <!---->
+
+      <div class="middle">
+        <h1>we <br />implement</h1>
+        <h2>corporate software</h2>
+       
+        <p>
+          Every chauffeur business needs pro-intelligent dispatch software to
+          automate and manage entire fleet operations. Here comes Logistifie a
+          complete solution for small and medium-sized ground transport
+          operators to take your business worldwide digitally.
+        </p>
+        <!-- <h3></h3> -->
+
+        <button id="button1">Get Started</button>
+        <button id="button2">Login</button>
+      </div>
+      <!---->
+
+      <div class="services">
+         <h6>Services List</h6>
+         <h3>what we're ofering</h3>
+         <h5>Effective solutions for managing your ground Transportation Business</h5>
+         <p>We bring the power of technology to your ground transportation business with a comprehensive dispatch solution. Our fully automated Intelligent Booking and Dispatch software provides complete Ground Transportation solutions and exponentially raises your business potential through the aid of the latest technologies and artificial intelligence, to automate all parts of your business that do not require human intervention and therefore eliminate the element of human errors from your business as far as possible. You'll see a fast uplift in your revenues and you'll much more easily manage all aspects of your business activities in a single place.</p>
+         
+         <div class="container">
+            <div class="card1">
+                <i class="fa-solid fa-location-dot"></i>
+                <h5>Dispatch System</h5>
+                <p>provide a simpler and more. efficient way to coordinate routes and deliveries while mitigating costly errors.</p>
+                
+            </div>
+
+            <div class="card2">
+                <i class="fa-solid fa-users-between-lines"></i>
+                <h5>Banking Portal</h5>
+                <p> provide a simpler and more. efficient way to coordinate routes and deliveries while mitigating costly errors.</p>
+            </div>
+            <div class="card3">
+                <i class="fa-solid fa-sim-card"></i>
+                <h5>Invoice Management</h5>
+                <p> provide a simpler and more. efficient way to coordinate routes and deliveries while mitigating costly errors.</p>
+            </div>
+            <div class="card4">
+                <i class="fa-regular fa-mobile"></i>
+                <h5>Driver App</h5>
+                <p> provide a simpler and more. efficient way to coordinate routes and deliveries while mitigating costly errors.</p>
+            </div>
+            <div class="card5">
+                <i class="fa-brands fa-twitter"></i>
+                <h5>Complete Solution</h5>
+                <p> provide a simpler and more. efficient way to coordinate routes and deliveries while mitigating costly errors.</p>
+            </div>
+            <div class="card6">
+                <i class="fa-light fa-thumbs-up"></i>
+                <h5>It Solutions</h5>
+                <p> provide a simpler and more. efficient way to coordinate routes and deliveries while mitigating costly errors.</p>
+            </div>
+         </div>
+      </div>
+      <!---->
+
+      <div class="image_heading">
+        <h3>Why Logistifie?</h3>
+        <p>Logistfie helps bring down your start-up or existing operational costs and win new business by streamlining your business, making it more efficient and much easier to run. With immense additional benefits that make us unique comes our basic mantra of "automation" and "simplicity our team will guide you through every step of the way nutifying all the risks and errors you come across while managing your Bookings, Driver and Customers. Some of the key features are as follows:</p>
+      </div>
+        <div class="image_content">
+        <div class="content">
+        <ul>
+            <li>A fully automated cloud-based dispatch system to take your business digitally.
+            </li><br>
+            <li>A customised web booking portal for your customer to make a booking directly through your website.
+            </li><br>
+            <li>
+                A customised Driver app with live GPS tracking, so you keep track of your driver ETA to the pick-up.
+                </li><br>
+                <li>Automatic invoice system which has the capacity to generate more than 100 invoices on one click for each client on a weekly or monthly basis.
+                </li><br>
+                <li>
+                    Automatic driver payment system which generates driver's payment including commission and admin fee.
+                    </li><br>
+                    <li>A system that manages your salesperson's commission automatically.
+                    </li><br>
+                    <li>The system keeps you TFL compliant and be ready at any given point of time to get inspected.
+                    </li><br>
+                    <li>The system is designed and developed in a way that makes it easy to use even for a non-technical person. </li><br>
+                       
+                        <li>Lowered running costs with less manpower requited to carry out much larger workloads. </li><br>
+                       
+                        <li>
+                            All data are highly secured in a cloud-based system therefore, you never have to worry about your safety and data security.</li>
+        </ul>
+        <button style="  background-color: gray;
+        color: white;
+        padding: 10px 40px;
+        border-radius: 20px;"
+       > Read More</button>
+        <button style=" background-color: red;
+        color: white;
+        padding: 10px 40px;
+        border-radius: 20px;" > Request a Demo</button>
+        </div>
+        <div class="image">
+            <img src="./Screenshot 2023-11-16 135542.png"/>
+        </div>
+      </div>
+    </div>
+      <!---->
+
+      <div class="elevate_section">
+        <div class="div1">
+            <h2>Elevate Your Business With Key Features of our Dispatch System </h2>
+           
+            <p>Growing business in 2021 is not easy. That's why Logistifle is offering a new way to evolve your business by optimizing the cost and enhancing features We never compromise in quality, our highly experienced team aims to provide top-notch solutions to clients and our smart system host inmense benefits that can help drive your business forward.</p>
+        </div>
+        <div class="parent1">
+             <div class="child1">
+                <div child11>
+                    <i class="fa-regular fa-cloud"></i>
+                </div>
+                <div child12>
+                    <h6>Cloud Based system<br> All Data are highly secure in cloud</h6>
+                </div>
+             </div>
+             <div class="child2">
+                <div class="child21">
+                    <i class="fa-solid fa-filter"></i>
+                </div>
+                <div class="child22">
+                    <h6>Highly Scalable<br>Get high scalability,uptime and performance</h6>
+                </div>
+             </div>
+             <div class="child3">
+                <div class="child31">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="child32">
+                    <h6>White Label <br> Get an app customizd to your brand</h6>
+                </div>
+             </div>
+        </div>
+             <!---->
+            <div class="parent2">
+             <div class="child4">
+                <div class="child41">
+                <i class="fa-solid fa-gear"></i>
+                </div>
+                <div class="child42">
+                    <h6>Secure services <br> we strive to keep all your client data safe and secure</h6>
+                </div>
+             </div>
+             <div class="child5">
+                <div class="child51">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="child52">
+                    <h6>User Friendly<br>simple user interface which supports devices of all size and configuration</h6>
+                </div>
+             </div>
+             <div class="child6">
+                <div class="child61">
+                    <i class="fa-sharp fa-solid fa-headset"></i>
+                </div>
+                <div class="child62">
+                    <h6>24/7 Dedciated Support,br>24/7 tchnical support and account manager</h6>
+                </div>
+             </div>
+        </div>
+        <div class="div3">
+            <h2>Take your business to a new level <br>with our intelligent software</h2>
+            <p>A system Trusted by several companies</p>
+            <button style="  background-color: red;
+            color: white;
+            padding: 10px 40px;
+            border-radius: 20px;
+            margin-left: 600px;">GetStarted</button>
+            <button style="  
+            color: black;
+            padding: 10px 40px;
+            border-radius: 20px;">Request Demo</button>
+        </div>
+      </div>
+
+      <!---->
+   
+</div>
+  </body>
+</html>

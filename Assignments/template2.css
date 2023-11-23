@@ -1,0 +1,59 @@
+
+.wrapper_row{
+    margin: 0 30px;
+    width: 1000px;
+    margin: auto;
+}
+.deen{
+    position: relative;
+     left: 100px; 
+}
+img{
+    width: 420px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 20px;
+    
+}
+.first, .second, .third, .four{
+    display: flex;
+       }
+.child1, .child4, .child8{
+    width:55%;
+    
+}
+ .first p{
+    font-size: x-small;
+ }
+.child2, .child3, .child7{
+    width: 10%;
+}
+.child1 button, .child3 button, .child5 button{
+    margin-bottom: 30px;
+}
+.child1 p, .child4 p, .child5 p, .child8 p{
+    line-height: 16px;
+    /* text-align: justify; */
+    width: 50%;
+    font-size:x-small;
+}
+
+button{
+    border: 2px solid lightblue;
+    border-radius: 30px;
+    padding:15px;
+}
+
+.child4 {
+    float: right;
+    position: relative;
+    left: 450px;
+}
+.child8{
+    position: relative;
+    left: 450px;
+}
+.first, .second, .third, .four {
+    display: flex;
+    margin-top: 30px;
+}
