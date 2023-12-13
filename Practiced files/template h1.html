@@ -65,7 +65,7 @@
             display: inline;
         }
 
-         .main li a {
+        .main li a {
             color: #C0BAB6;
             background-color: #232323;
             text-decoration: none;
@@ -88,37 +88,84 @@
         }
 
         #container img {
-            width: 960px;
-            height: 300px;
             background-color: #232323;
-            border: 4px solid #D6D6D6;
         }
 
         .blocks {
+            display: block;
+            width: 100%;
+            text-align: left;
+            color: #979797;
+            background-color: #FFFFFF;
+        }
+
+        div#blocker {
             width: 960px;
             margin: auto;
             overflow: auto;
         }
 
-        #block1 {
-            width: 320px;
+        #block1 figure {
             float: left;
+        }
+
+        #block1 h2 {
+            font-size: 18px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        #block1 figcaption p {
+            font-size: 14px;
+            line-height: 1.8em;
+            margin: 10px 0;
         }
 
         #block2 {
-            width: 300px;
             float: left;
         }
 
+        #block2 figure {
+            margin-left: 10px;
+        }
+
+        #block2 h2 {
+            font-size: 18px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        #block2 figcaption p {
+            font-size: 14px;
+            line-height: 1.8em;
+            margin: 10px 0;
+        }
+
         #block3 {
-            width: 320px;
             float: right;
         }
 
+        #block3 figure {
+            margin-left: 20px;
+        }
+
+        #block3 h2 {
+            font-size: 18px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        #block3 figcaption p {
+            font-size: 14px;
+            line-height: 1.8em;
+            margin: 10px 0;
+        }
+
         figure img {
-            width: 260px;
+
             border: 1px solid #D6D6D6;
             padding: 4px;
+            margin: 0 0 15px 0;
         }
 
         figcaption {
@@ -126,10 +173,14 @@
 
         }
 
-        figcaption a {
-            margin-left: 219px;
+        figcaption .more {
+            text-align: right;
+        }
+
+        a {
             color: #FF9900;
-            background-color: #FFFFFF;
+            text-decoration: none;
+            font-size: 14px;
         }
 
         #article {
@@ -137,6 +188,8 @@
             margin: auto;
             overflow: auto;
             padding: 30px;
+            color: #979797;
+            background-color: #FFFFFF;
         }
 
         #article figure img {
@@ -159,7 +212,13 @@
             font-style: italic;
         }
 
-        #article figcaption a {
+        #article figcaption p {
+            margin: 10px 0;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        #article figcaption {
             margin-left: 10px;
         }
 
@@ -167,7 +226,7 @@
             color: #FF9900;
         }
 
-        .footer {
+        .footer1 {
 
             width: 100%;
             text-align: left;
@@ -178,7 +237,7 @@
             margin: auto;
         }
 
-        .footer {
+        .footer1 {
             width: 100%;
             display: block;
             text-align: left;
@@ -242,7 +301,7 @@
             display: block;
         }
 
-        .footer a {
+        .footer1 a {
             color: #FF9900;
             background-color: #333333;
         }
@@ -275,38 +334,40 @@
         </div>
     </div>
     <div class="blocks">
-        <div id="block1">
-            <figure>
-                <img src="./images/demo/290x180.gif" alt="">
-            </figure>
-            <figcaption>
-                <h2>Indonectetus facilis</h2>
-                <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
-                <a href="">Read More</a>
-            </figcaption>
+        <div id="blocker">
+            <div id="block1">
+                <figure>
+                    <img src="./images/demo/290x180.gif" alt="">
+                    <figcaption>
+                        <h2>Indonectetus facilis</h2>
+                        <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
+                        <footer class="more"><a href="">Read More »</a></footer>
+                    </figcaption>
+                </figure>
 
-        </div>
-        <div id="block2">
-            <figure>
-                <img src="./images/demo/290x180.gif" alt="">
-            </figure>
-            <figcaption>
-                <h2>Indonectetus facilis</h2>
-                <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
-                <a href="">Read More</a>
-            </figcaption>
+            </div>
+            <div id="block2">
+                <figure>
+                    <img src="./images/demo/290x180.gif" alt="">
+                </figure>
+                <figcaption>
+                    <h2>Indonectetus facilis</h2>
+                    <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
+                    <footer class="more"><a href="">Read More »</a></footer>
+                </figcaption>
 
-        </div>
-        <div id="block3">
-            <figure>
-                <img src="./images/demo/290x180.gif" alt="">
-            </figure>
-            <figcaption>
-                <h2>Indonectetus facilis</h2>
-                <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
-                <a href="">Read More</a>
-            </figcaption>
+            </div>
+            <div id="block3">
+                <figure>
+                    <img src="./images/demo/290x180.gif" alt="">
+                </figure>
+                <figcaption>
+                    <h2>Indonectetus facilis</h2>
+                    <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
+                    <footer class="more"><a href="">Read More »</a></footer>
+                </figcaption>
 
+            </div>
         </div>
     </div>
     <div id="article">
@@ -321,10 +382,10 @@
                     and credit links in the template and associated files. For more HTML5 templates visit <span>free
                         website
                         templates.</span></p>
-                <a href="">Read More</a>
+                <footer class="more"><a href="">Read More »</a></footer>
             </figcaption>
     </div>
-    <div class="footer">
+    <div class="footer1">
         <div id="sections">
             <div id="section1">
                 <h2>LINK BLOCK</h2>
