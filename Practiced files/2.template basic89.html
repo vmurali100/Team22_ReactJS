@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .firstrow {
+            display: block;
+            width: 100%;
+            text-align: left;
+            color: #C0BAB6;
+            background-color: #333333;
+        }
+
+        #header {
+            display: block;
+            margin: 0 auto;
+            width: 960px;
+            padding: 20px 0;
+            overflow: auto;
+        }
+
+        #header #hgroup {
+            float: left;
+            padding: 0 0 20px 0;
+        }
+
+        #header #hgroup h1 {
+            font-size: 36px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #header #hgroup h2 {
+            font-size: 13px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .firstrow nav {
+            display: block;
+            float: right;
+            margin: 10px 0 0 0;
+            padding: 0 20px;
+            color: #C0BAB6;
+            background-color: #232323;
+        }
+
+        #header nav ul {
+            padding: 20px 0;
+        }
+
+        #header nav ul li {
+            display: inline;
+            text-transform: uppercase;
+            margin-right: 20px;
+        }
+
+        .firstrow a {
+            outline: none;
+            text-decoration: none;
+            color: #C0BAB6;
+            background-color: #232323;
+            font-size: 14px;
+        }
+
+        .secondrow {
+            display: block;
+            width: 100%;
+            text-align: left;
+            margin: 30px 0;
+            color: #979797;
+            background-color: #FFFFFF;
+        }
+
+        div#block {
+            display: block;
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .thirdrow {
+            display: block;
+            width: 100%;
+            text-align: left;
+            color: #979797;
+            background-color: #FFFFFF;
+        }
+
+        div#articles {
+            display: block;
+            width: 960px;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 0 0 30px 0;
+            border-bottom: 1px solid #DEDEDE;
+        }
+
+        article.art {
+            width: 225px;
+            float: left;
+            margin: 0 20px 0 0;
+        }
+
+        #articles .art figure {
+            display: inline;
+            float: left;
+        }
+
+        #articles .art figure img {
+            line-height: normal;
+            vertical-align: middle;
+        }
+
+        .thirdrow strong {
+            float: left;
+            margin: 8px 0 0 10px;
+            padding: 0;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        #articles .art p {
+            display: block;
+            margin: 0;
+            padding: 5px 0 0 0;
+            clear: both;
+            line-height: 1.6em;
+            font-size: 14px;
+        }
+
+        #articles .art #more {
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .thirdrow a {
+            color: #FF9900;
+            background-color: #FFFFFF;
+            outline: none;
+            text-decoration: none;
+        }
+
+        article.lastart {
+            margin-right: 0;
+            width: 225px;
+            float: right;
+        }
+
+        #articles .lastart figure {
+            display: inline;
+            float: left;
+        }
+
+        #articles .lastart figure img {
+            line-height: normal;
+            vertical-align: middle;
+        }
+
+        #articles .lastart p {
+            display: block;
+            margin: 5px 0 0 0;
+            clear: both;
+            font-size: 14px;
+            line-height: 1.6em;
+        }
+
+        #articles .lastart #more {
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .forthrow {
+            display: block;
+            width: 100%;
+            text-align: left;
+            color: #C0BAB6;
+            background-color: #FFFFFF;
+            padding: 0 0 30px 0;
+            border-bottom: 1px solid #DEDEDE;
+            margin: 30px 0;
+        }
+
+        .forthrow #section {
+            display: block;
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        #section figure {
+            height: 185px;
+        }
+
+        #section article figure ul {
+            list-style: none;
+            display: block;
+            clear: both;
+        }
+
+        #section .clear .secmg {
+            width: 300px;
+            float: left;
+            margin: 0 30px 0 0;
+        }
+
+        #section .clear .secmg img {
+            padding: 4px;
+            border: 1px solid #D6D6D6;
+        }
+
+        #section .clear .secmglast {
+            width: 300px;
+            margin-right: 0;
+            float: left;
+        }
+
+        #section .clear .secmglast img {
+            padding: 4px;
+            border: 1px solid #D6D6D6;
+        }
+
+        #section figcaption {
+            text-align: right;
+            margin-top: 20px;
+            display: block;
+            width: 100%;
+        }
+
+        .forthrow a {
+            text-decoration: none;
+            outline: none;
+            color: #FF9900;
+            background-color: #FFFFFF;
+            font-size: 14px;
+        }
+
+        .lastrow {
+            display: block;
+            width: 100%;
+            text-align: left;
+            color: #979797;
+            background-color: #FFFFFF;
+        }
+
+        div#content {
+            width: 960px;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 0 0 30px 0;
+        }
+
+        div#sidecontent {
+            width: 630px;
+            float: left;
+        }
+
+        #posts ul li {
+            margin-bottom: 30px;
+            height: 160px;
+        }
+
+        article.clear {
+            display: block;
+            clear: both;
+        }
+
+        #posts ul li .clear figure img {
+            float: left;
+            width: 180px;
+            height: 150px;
+            padding: 4px;
+            border: 1px solid #D6D6D6;
+        }
+
+        #posts ul li .clear figure figcaption {
+            float: right;
+            width: 410px;
+            display: block;
+        }
+
+        #posts ul li .clear figure figcaption h2 {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: normal;
+        }
+
+        #posts ul li .clear figure figcaption p {
+            font-size: 14px;
+            margin: 10px 0;
+            line-height: 1.6em;
+        }
+
+        #posts ul li .clear figure figcaption .more {
+            text-align: right;
+            padding: 20px;
+        }
+
+        #posts ul li .clear figure figcaption .more a {
+            color: #FF9900;
+            background-color: #FFFFFF;
+            outline: none;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        div#sidecolumn {
+            float: right;
+            width: 280px;
+        }
+
+        #content #sidecolumn h2#title {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #DEDEDE;
+        }
+
+        #content #sidecolumn nav {
+            display: block;
+            width: 100%;
+        }
+
+        #content #sidecolumn nav ul li {
+            margin: 0 0 3px 0;
+        }
+
+        #content #sidecolumn nav ul li a {
+            display: block;
+            padding: 5px 10px 5px 20px;
+            color: #666666;
+            background: url(./images/orange_file.gif)no-repeat 10px center #FFFFFF;
+            text-decoration: none;
+            border-bottom: 1px dotted #666666;
+            font-size: 14px;
+            outline: none;
+        }
+
+        span {
+            color: #FF9900;
+            background-color: #FFFFFF;
+            outline: none;
+            text-decoration: none;
+        }
+
+        .footerrow {
+            display: block;
+            width: 100%;
+            text-align: left;
+            color: #919191;
+            background-color: #232323;
+        }
+
+        div#lastfooter {
+            display: block;
+            width: 960px;
+            margin: 0 auto;
+            padding: 20px 0;
+            overflow: auto;
+        }
+
+        p.fl.left {
+            float: left;
+        }
+
+        .footerrow p {
+            font-size: 14px;
+        }
+
+        p.fl.right {
+            float: right;
+        }
+        .footerrow a{
+            font-size: 14px;
+            color: #919191;
+            background-color: #232323;
+            outline: none;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="firstrow">
+        <div id="header">
+            <div id="hgroup">
+                <h1>Basic8<sub>9</sub></h1>
+                <h2>Free HTML<sub>5</sub>Website Template</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="secondrow">
+        <div id="block">
+            <img src="./images copy/demo/960x360.gif" alt="">
+        </div>
+    </div>
+    <div class="thirdrow">
+        <div id="articles">
+            <article class="art">
+                <figure>
+                    <img src="./images copy/demo/32x32.gif" alt="">
+                </figure>
+                <strong> LORUM IPSUM DOLOR</strong>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc non diam erat. In fringilla massa ut nisi ullamcorper.</p>
+                <footer id="more"><a href=""> Read More »</a></footer>
+            </article>
+            <article class="art">
+                <figure>
+                    <img src="./images copy/demo/32x32.gif" alt="">
+                </figure>
+                <strong> LORUM IPSUM DOLOR</strong>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc non diam erat. In fringilla massa ut nisi ullamcorper.</p>
+                <footer id="more"><a href="">Read More »</a></footer>
+            </article>
+            <article class="art">
+                <figure>
+                    <img src="./images copy/demo/32x32.gif" alt="">
+                </figure>
+                <strong> LORUM IPSUM DOLOR</strong>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc non diam erat. In fringilla massa ut nisi ullamcorper.</p>
+                <footer id="more"><a href="">Read More »</a></footer>
+            </article>
+            <article class="lastart">
+                <figure>
+                    <img src="./images copy/demo/32x32.gif" alt="">
+                </figure>
+                <strong> LORUM IPSUM DOLOR</strong>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc non diam erat. In fringilla massa ut nisi ullamcorper.</p>
+                <footer id="more"><a href="">Read More »</a></footer>
+            </article>
+        </div>
+    </div>
+    <div class="forthrow">
+        <div id="section">
+            <article>
+                <figure>
+                    <ul class="clear">
+                        <li class="secmg">
+                            <img src="./images copy/demo/290x180.gif" alt="">
+                        </li>
+                        <li class="secmg">
+                            <img src="./images copy/demo/290x180.gif" alt="">
+                        </li>
+                        <li class="secmglast">
+                            <img src="./images copy/demo/290x180.gif" alt="">
+                        </li>
+                    </ul>
+                </figure>
+                <figcaption>
+                    <a href="">View All Our Recent Work Here »</a>
+                </figcaption>
+
+            </article>
+        </div>
+    </div>
+    <div class="lastrow">
+        <div id="content">
+            <div id="sidecontent">
+                <section id="posts">
+                    <ul>
+                        <li>
+                            <article class="clear">
+                                <figure>
+                                    <img src="./images copy/demo/180x150.gif" alt="">
+                                    <figcaption>
+                                        <h2> INDONECTETUS FACILIS LEO NIBH</h2>
+                                        <p> This is a W3C compliant free website template from <span>OS
+                                                Templates.</span>
+                                            For full terms of use of this template please read our <span> website
+                                                template licence.</span></p>
+                                        <footer class="more"><a href="">Read More »</a></footer>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                        </li>
+                        <li class="last">
+                            <article class="clear">
+                                <figure>
+                                    <img src="./images copy/demo/180x150.gif" alt="">
+                                    <figcaption>
+                                        <h2>INDONECTETUS FACILIS LEO NIBH</h2>
+                                        <p> You can use and modify the template for both personal and commercial use.
+                                            You must keep all copyright information and credit links in the template and
+                                            associated files.
+                                            For more HTML5 templates visit <span>free website templates.</span></p>
+                                        <footer class="more"> <a href=""> Read More »</a></footer>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div id="sidecolumn">
+                <h2 id="title"> CATEGORIES</h2>
+                <nav>
+                    <ul>
+                        <li><a href=""> Free Website Templates</a></li>
+                        <li><a href=""> Free CSS Templates</a></li>
+                        <li><a href="">Free XHTML Templates</a></li>
+                        <li><a href=""> Free Web Templates</a></li>
+                        <li><a href=""> Free Website Layouts</a></li>
+                        <li><a href=""> Free HTML 5 Templates</a></li>
+                        <li><a href="">Free Webdesign Templates</a></li>
+                        <li><a href=""> Free FireWorks Templates</a></li>
+                        <li><a href=""> Free PNG Templates</a></li>
+                        <li><a href="">Free Website Themes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="footerrow">
+        <div id="lastfooter">
+            <p class="fl left">
+                Copyright © 2018 - All Rights Reserved - <a href=""> Domain Name</a>
+            </p>
+            <p class="fl right">Template by <a href="">OS Template</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
