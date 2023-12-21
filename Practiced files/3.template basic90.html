@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .firstrow {
+            display: block;
+            width: 100%;
+            text-align: left;
+            color: #C0BAB6;
+            background-color: #333333;
+        }
+
+        #header {
+            width: 960px;
+            margin: 0 auto;
+            padding: 20px 0;
+            overflow: auto;
+        }
+
+        div#hgroup {
+            float: left;
+            margin: 0 0 20px 0;
+        }
+
+        .firstrow h1 {
+            font-size: 36px;
+        }
+
+        .firstrow h2 {
+            font-size: 14px;
+        }
+
+        #header form {
+            display: block;
+            width: 290px;
+            float: right;
+            margin: 20px 0;
+        }
+
+        form input {
+            display: block;
+            float: left;
+            width: 200px;
+            padding: 5px;
+            color: #C0BAB6;
+            background-color: #232323;
+            border: 1px solid #666666;
+            font-size: 12px;
+        }
+
+        input#sf_submit {
+            display: block;
+            width: 60px;
+            float: right;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background-color: #FF9900;
+            border: none;
+            cursor: pointer;
+        }
+        .firstrow nav {
+            display: block;
+            padding: 20px 0;
+            width: 100%;
+            color: #C0BAB6;
+            background-color: #232323;
+            clear: both;
+        }
+
+        #header nav ul {
+            padding: 0 20px;
+            outline-style: none;
+        }
+
+        #header nav ul li {
+            display: inline;
+            margin-right: 25px;
+            text-transform: uppercase;
+        }
+
+        #header nav ul li a {
+            color: #C0BAB6;
+            background-color: #232323;
+            outline: none;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .secondrow {
+            display: block;
+            width: 100%;
+            text-align: left;
+            color: #979797;
+            background-color: #FFFFFF;
+        }
+
+        div#container {
+            width: 960px;
+            margin: 0 auto;
+            padding: 30px 0;
+        }
+
+        section#slider {
+            margin-bottom: 30px;
+            overflow: auto;
+        }
+
+        #container #slider figure img {
+            float: right;
+            width: 630px;
+            height: 300px;
+        }
+
+        #container #slider figure figcaption {
+            display: block;
+            width: 290px;
+            height: 260px;
+            padding: 20px;
+            color: #989898;
+            background-color: #464646;
+            /* line-height: 1.6em; */
+            overflow: hidden;
+        }
+
+        #container #slider figure figcaption h2 {
+            font-size: 42px;
+            font-style: italic;
+            font-weight: normal;
+            text-transform: none;
+            line-height: normal;
+        }
+
+        #container #slider figure figcaption p {
+            margin: 10px 0;
+            font-size: 14px;
+            line-height: 1.6em;
+        }
+
+        #container #slider figure figcaption .more {
+            text-align: right;
+            font-size: 14px;
+        }
+
+        #container #slider figure figcaption .more a {
+            color: #FF9900;
+            background-color: #464646;
+            outline: none;
+            text-decoration: none;
+        }
+
+        .thirdrow {
+            display: block;
+            width: 100%;
+            text-align: left;
+            color: #979797;
+            background-color: #FFFFFF;
+            margin-bottom: 60px;
+        }
+
+        div#intro {
+            margin-bottom: 60px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #D6D6D6;
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        #intro section.clear {
+            margin-bottom: 30px;
+            overflow: auto;
+        }
+
+        article.one {
+            width: 470px;
+            float: left;
+
+        }
+
+        #intro .clear .one h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-style: italic;
+            line-height: normal;
+        }
+
+        #intro .clear .one p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        article.last {
+            margin-right: 0;
+            width: 470px;
+            float: right;
+        }
+
+        .last figure ul {
+            display: block;
+            width: 100%;
+            list-style: none;
+            height: 140px;
+        }
+
+        #intro .clear .last figure ul li {
+            display: inline;
+            margin: 0 20px 0 0;
+            float: left;
+        }
+
+        #intro .clear .last figure ul li#la {
+            margin-right: 0;
+        }
+
+        .thirdrow img {
+            padding: 4px;
+            border: 1px solid #D6D6D6;
+        }
+
+        #intro .clear .last figure figcaption {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            clear: both;
+        }
+
+        .thirdrow a {
+            color: #FF9900;
+            background-color: #FFFFFF;
+            outline: none;
+            text-decoration: none;
+        }
+
+        .fourthrow {
+            display: block;
+            width: 100%;
+            text-align: left;
+            color: #979797;
+            background-color: #FFFFFF;
+        }
+
+        div#homepage {
+            width: 960px;
+            margin: 0 auto;
+            line-height: 1.2em;
+            overflow: auto;
+            padding-bottom: 30px;
+        }
+
+        #homepage #one {
+            width: 225px;
+            float: left;
+            margin: 0 20px 0 0;
+        }
+
+        .fourthrow h2#title {
+            margin: 0 0 25px 0;
+            padding: 0 0 8px 0;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: normal;
+        }
+
+        #homepage #one article header h2 {
+            font-size: 13px;
+            font-weight: bold;
+            font-style: italic;
+            line-height: normal;
+        }
+
+        #homepage #one article header address {
+            font-size: 10px;
+            font-style: normal;
+        }
+
+        #homepage #one article header time {
+            font-size: 10px;
+            font-style: normal;
+        }
+
+        #homepage #one article p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        #homepage #one article footer#more {
+            text-align: left;
+        }
+
+        #homepage #one article footer#more a {
+            font-size: 14px;
+            color: #FF9900;
+            outline: none;
+            text-decoration: none;
+        }
+
+        span {
+            color: #FF9900;
+        }
+
+        #homepage #one nav ul li {
+            margin: 0 0 8px 0;
+            padding: 0 0 5px 0;
+            border-bottom: 1px solid #D6D6D6;
+        }
+
+        #homepage #one nav ul li a {
+            color: #FF9900;
+            outline: none;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 0 0 0 10px;
+            background: url() left center no-repeat;
+        }
+
+        #homepage #two img {
+            vertical-align: middle;
+            line-height: normal;
+        }
+
+        #homepage #two p {
+            font-size: 14px;
+            line-height: 1.6em;
+            margin: 10px 0;
+        }
+
+        footer.more {
+            text-align: right;
+            font-size: 14px;
+        }
+
+        img#imgl {
+            float: left;
+            padding: 4px;
+            border: 1px solid #D6D6D6;
+            margin: 0 15px 15px 0;
+            /* clear: left; */
+            text-align: center;
+        }
+
+        #homepage #two footer.more a {
+            color: #FF9900;
+            outline: none;
+            text-decoration: none;
+        }
+
+        .lastrow {
+            display: block;
+            width: 100%;
+            text-align: left;
+            color: #919191;
+            background-color: #232323;
+        }
+
+        #footer {
+            width: 960px;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 20px 0;
+        }
+
+        p.fl.left {
+            float: left;
+        }
+
+        p#flright {
+            float: right;
+        }
+
+        .lastrow #footer a {
+            color: #919191;
+            background-color: #232323;
+            outline: none;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="firstrow">
+        <div id="header">
+            <div id="hgroup">
+                <h1>Basic90</h1>
+                <h2>Free HTML<sub>5</sub> Website Template</h2>
+            </div>
+            <form action="">
+                <input type="text" placeholder="Search Our Website">
+                <input type="text" id="sf_submit" value="Submit">
+            </form>
+            <nav>
+                <ul>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="secondrow">
+        <div id="container">
+            <section id="slider">
+                <figure>
+                    <img src="./images copy 2/demo/630x300.gif" alt="">
+                    <figcaption>
+                        <h2> Eu justo augue estas</h2>
+                        <p> Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.
+                            Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et
+                            feugiat adipiscinia pellentum leo.</p>
+                        <footer class="more"><a href=""> Read More »</a></footer>
+                    </figcaption>
+                </figure>
+            </section>
+        </div>
+    </div>
+    <div class="thirdrow">
+        <div id="intro">
+            <section class="clear">
+                <article class="one">
+                    <h2>Lorum ipsum dolor</h2>
+
+                    <p>This is a W3C compliant free website template from <a href=""> OS Templates.</a>
+                        For full terms of use of this template please read our <a href=""> website template licence.</a>
+                    </p>
+
+                    <p>You can use and modify the template for both personal and commercial use.
+                        You must keep all copyright information and credit links in the template and associated files.
+                        For more HTML5 templates visit <a href="">free website templates.</a></p>
+                </article>
+                <article class="last">
+                    <figure>
+                        <ul class="clear">
+                            <li><a href=""><img src="./images copy 2/demo/130x130.gif" alt=""></a></li>
+                            <li><a href=""><img src="./images copy 2/demo/130x130.gif" alt=""></a></li>
+                            <li id="la"><a href=""><img src="./images copy 2/demo/130x130.gif" alt=""></a></li>
+                        </ul>
+                        <figcaption>
+                            <a href="">View All Image Gallery Here</a>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+        </div>
+    </div>
+    <div class="fourthrow">
+        <div id="homepage">
+            <section id="one">
+                <h2 id="title">FROM THE BLOG</h2>
+                <article>
+                    <header>
+                        <h2>Post Title</h2>
+                        <address>
+                            <span>Admin</span>, domainname.com
+                        </address>
+                        <Time datetime="2000-04-06">
+                            Friday, 6 <sub>th</sub> April 2000
+                        </Time>
+                    </header>
+                    <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.
+                    </p>
+                    <footer id="more"><a href="">Read More »</a></footer>
+                </article>
+            </section>
+            <section id="one">
+                <h2 id="title"> QUICK LINKS </h2>
+                <nav>
+                    <ul>
+                        <li><a href="">Lorem ipsum dolor sit</a></li>
+                        <li><a href="">Amet consectetur</a></li>
+                        <li><a href="">Praesent vel sem id</a></li>
+                        <li><a href="">Curabitur hendrerit est</a></li>
+                        <li class="last"><a href="">Sed a nulla urna</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section id="two">
+                <h2 id="title">ABOUT US</h2>
+                <img id="imgl" src="./images copy 2/demo/130x130.gif" alt="">
+                <p>Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum
+                    ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus
+                    consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna
+                    luctus suscipit.
+                </p>
+                <footer class="more"> <a href=""> Read More »</a></footer>
+            </section>
+        </div>
+    </div>
+    <div class="lastrow">
+        <div id="footer">
+            <p class="fl left">
+                Copyright © 2018 - All Rights Reserved -<a href=""> Domain Name</a></p>
+            <p id="flright"> Template by <a href="">OS Templates</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
