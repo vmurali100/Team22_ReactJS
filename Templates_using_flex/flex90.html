@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .firstrow {
+        display: block;
+        width: 100%;
+        text-align: left;
+        color: #C0BAB6;
+        background-color: #333333;
+    }
+
+    div#header {
+        display: block;
+        width: 960px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    div#hgroup {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #hgroup #h h1 {
+        font-size: 36px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: normal;
+        text-transform: none;
+    }
+
+    #hgroup #h h2 {
+        font-size: 13px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: normal;
+        text-transform: none;
+    }
+
+    div#form {
+        display: flex;
+        justify-content: space-between;
+        /* width: 290px; */
+        margin: 20px 0;
+    }
+
+    #hgroup #form input {
+        padding: 5px;
+        color: #C0BAB6;
+        background-color: #232323;
+        border: 1px solid #666666;
+        width: 200px;
+    }
+
+    #hgroup #form #sf_submit {
+        width: 70px;
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: #FF9900;
+        border: none;
+        cursor: pointer;
+        margin: 0 0 0 5px;
+    }
+
+    #header nav {
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+        color: #C0BAB6;
+        background-color: #232323;
+        clear: both;
+    }
+
+    #header nav ul {
+        padding: 0 20px;
+        list-style: none;
+    }
+
+    #header nav ul li {
+        display: inline;
+        margin-right: 25px;
+        text-transform: uppercase;
+    }
+
+    #header nav ul li a {
+        text-decoration: none;
+        color: #C0BAB6;
+        background-color: #232323;
+    }
+
+    .secondrow {
+        display: block;
+        width: 100%;
+        text-align: left;
+        color: #979797;
+        background-color: #FFFFFF;
+    }
+
+    div#container {
+        padding: 30px 0;
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    section#slider {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    #container #slider figcaption {
+        width: 290px;
+        height: 260px;
+        padding: 20px;
+        color: #989898;
+        background-color: #464646;
+        line-height: 1.6em;
+    }
+
+    #container #slider figcaption h2 {
+        font-size: 42px;
+        font-weight: normal;
+        font-style: italic;
+        text-transform: none;
+        line-height: normal;
+    }
+
+    #container #slider figcaption p {
+        font-size: 14px;
+    }
+
+    footer.more {
+        text-align: right;
+    }
+
+    #container #slider figcaption .more a {
+        color: #FF9900;
+        font-size: 14px;
+        text-decoration: none;
+        background-color: #464646;
+    }
+
+    #container #slider figure img {
+        width: 630px;
+        height: 300px;
+        border: none;
+        line-height: normal;
+        vertical-align: middle;
+    }
+
+    #container .intro {
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #D6D6D6;
+    }
+
+    section#class {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    #container .intro article {
+        width: 470px;
+    }
+
+    #container .intro #class .blocklast .list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    #container .intro #class .blocklast .list li img {
+        border: 1px solid #D6D6D6;
+        padding: 4px;
+        line-height: normal;
+        vertical-align: middle;
+    }
+
+    #container .intro #class .blocklast figcaption {
+        margin: 20px 0 0 0;
+        text-align: center;
+        font-size: 16px;
+        clear: both;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    #container .intro #class .blocklast figcaption a {
+        color: #FF9900;
+        outline: none;
+        text-decoration: none;
+    }
+
+    #container .intro #class .block h2 {
+        font-size: 22px;
+        font-style: italic;
+        margin-bottom: 15px;
+        font-weight: normal;
+        line-height: normal;
+    }
+
+    #container .intro #class .block p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    #container .intro #class .block p a {
+        text-decoration: none;
+        color: #FF9900;
+        background-color: #FFFFFF;
+    }
+
+    div#homepage {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section.con {
+        width: 225px;
+    }
+
+    h2.title {
+        margin: 0 0 25px 0;
+        padding: 0 0 8px 0;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-style: italic;
+        line-height: normal;
+    }
+
+    #homepage .con article header h2 {
+        font-size: 13px;
+        font-style: italic;
+        font-weight: bold;
+        line-height: normal;
+    }
+
+    address {
+        font-size: 10px;
+    }
+
+    #homepage a {
+        color: #FF9900;
+        outline: none;
+        text-decoration: none;
+        background-color: #FFFFFF;
+    }
+
+    time {
+        font-size: 10px;
+        font-style: normal;
+        line-height: 1.6em;
+    }
+
+    #homepage .con p {
+        margin: 10px 0;
+        font-size: 13px;
+        line-height: 1.6em;
+    }
+
+    footer.more {
+        text-align: right;
+    }
+
+    .more a {
+        font-size: 14px;
+    }
+
+    #homepage .con nav ul {
+        list-style: none;
+    }
+
+    #homepage .con nav ul li {
+        margin: 0 0 8px 0;
+        padding: 0 0 5px 0;
+        border-bottom: 1px solid #D6D6D6;
+    }
+
+    section.two {
+        width: 470px;
+    }
+
+    div#para {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    #homepage .two #para img {
+        padding: 4px;
+        border: 1px solid #D6D6D6;
+        width: 130px;
+        height: 130px;
+        margin: 0 15px 15px 0;
+    }
+
+    #homepage .two #para p {
+
+        font-size: 14px;
+        line-height: 1.6em;
+    }
+
+    #homepage .con nav a {
+        padding: 0 0 0 10px;
+        /* background: url(../Practiced\ files/) left center no-repeat; */
+    }
+
+    .lastrow {
+        display: block;
+        width: 100%;
+        text-align: left;
+        color: #919191;
+        background-color: #232323;
+    }
+
+    div#last {
+        display: flex;
+        width: 960px;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    #last p.a {
+        font-size: 13px;
+    }
+
+    #last .a a {
+        font-size: 13px;
+        color: #919191;
+        background-color: #232323;
+        outline: none;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div class="firstrow">
+        <div id="header">
+            <div id="hgroup">
+                <div id="h">
+                    <h1>Basic90</h1>
+                    <h2>free HTML <sub>5</sub> website Templates</h2>
+                </div>
+                <div id="form">
+                    <form action="">
+                        <input type="text" placeholder="Search Our Website...">
+                        <input type="text" id="sf_submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="secondrow">
+        <div id="container">
+            <section id="slider">
+                <figcaption>
+                    <h2>Eu justo augue estas</h2>
+                    <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.
+                        Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et
+                        feugiat adipisciniapellentum leo.</p>
+                    <footer class="more"><a href="">Read More »</a></footer>
+                </figcaption>
+                <figure>
+                    <img src="../Practiced files/images copy 2/demo/630x300.gif" alt="">
+                </figure>
+            </section>
+            <div class="intro">
+                <section id="class">
+                    <article class="block">
+                        <h2> Lorum ipsum dolor</h2>
+                        <p> This is a W3C compliant free website template from <a href=""> OS Templates.</a>
+                            For full terms of use of this template please read our <a href=""> website template
+                                licence.</a>
+                        <p>You can use and modify the template for both personal and commercial use.
+                            You must keep all copyright information and credit links in the template and associated
+                            files.
+                            For more HTML5 templates visit <a href=""> free website templates.</a></p>
+                    </article>
+                    <article class="blocklast">
+                        <figure>
+                            <ul class="list">
+                                <li><a href=""><img src="../Practiced files/images copy 2/demo/130x130.gif" alt=""></a>
+                                </li>
+                                <li><a href=""><img src="../Practiced files/images copy 2/demo/130x130.gif" alt=""></a>
+                                </li>
+                                <li><a href=""><img src="../Practiced files/images copy 2/demo/130x130.gif" alt=""></a>
+                                </li>
+                            </ul>
+                        </figure>
+                        <figcaption><a href="">VIEW OUR IMAGE GALLERY HERE »</a></figcaption>
+                    </article>
+                </section>
+            </div>
+            <div id="homepage">
+                <section class="con">
+                    <h2 class="title"> FROM THE BLOG</h2>
+                    <article>
+                        <header>
+                            <h2>Post Title</h2>
+                            <address>
+                                <a href="">Admin,</a>domainname.com
+                            </address>
+                            <time datetime="2000-04-06">
+                                Friday, 6
+                                <sub>th</sub>
+                                April 2000
+                            </time>
+                        </header>
+                        <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat
+                            imperdiet.</p>
+                        <footer class="more"><a href="">Read More »</a></footer>
+                    </article>
+                </section>
+                <section class="con">
+                    <h2 class="title"> QUICK LINKS</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="">Lorem ipsum dolor sit</a></li>
+                            <li><a href="">Amet consectetur</a></li>
+                            <li><a href="">Praesent vel sem id</a></li>
+                            <li><a href="">Curabitur hendrerit est</a></li>
+                            <li><a href="">Sed a nulla urna</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="two">
+                    <h2 class="title"> ABOUT US</h2>
+                    <div id="para">
+                        <img src="../Practiced files/images copy 2/demo/130x130.gif" alt="">
+
+                        <p>Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus
+                            ipsum ante quis turpis.
+                            Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat
+                            imperdiet.
+                            Vestibulum sapien.
+                            Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit.</p>
+                    </div>
+                    <footer class="more"><a href="">Read More »</a></footer>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="lastrow">
+        <div id="last">
+            <p class="a">Copyright © 2018 - All Rights Reserved - <a href=""> Domain Name </a></p>
+            <p class="a">Template by <a href=""> OS Templates</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
