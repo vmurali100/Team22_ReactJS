@@ -133,9 +133,12 @@ h5 {
 #content .two{
     height: 562px;
 }
-#content #sec .two h4{
-position: relative;
-}
+/* #content #sec .two h4{
+
+} */
 #content #sec .two figure img{
     position: absolute;
+}
+#content #sec .two{
+    position: relative;
 }
