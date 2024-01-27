@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #firstsection {
+            width: 1366px;
+            height: 768px;
+            background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h1.logo {
+            margin-top: 48px;
+            margin-left: 116px;
+            color: #FFFFFF;
+            font-size: 40px;
+            font-style: normal;
+            font-family: raleway;
+            font-weight: 900;
+            line-height: normal;
+        }
+
+        nav {
+            margin-top: 48px;
+            margin-right: 116px;
+        }
+
+        .head nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        .head nav ul li a {
+            outline: none;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        a.lastli {
+            padding: 16px 32px;
+            border-radius: 24px;
+            background: #023047;
+        }
+
+        #herosection {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 124px;
+        }
+
+        h1 {
+            width: 457px;
+            margin-left: 116px;
+            color: #FFFFFF;
+            font-size: 50px;
+            font-style: normal;
+            font-family: raleway;
+            font-weight: 900;
+            line-height: 125%;
+
+        }
+
+        p {
+            width: 457px;
+            margin-left: 116px;
+            color: #FFFFFF;
+            font-size: 16PX;
+            font-style: normal;
+            font-family: poppins;
+            font-weight: 400;
+            line-height: 200%;
+            margin-top: 8px;
+        }
+
+        button.pencil {
+            padding: 16px 32px;
+            border-radius: 24px;
+            background: #DA722C;
+            border: none;
+            position: relative;
+            margin-left: 116px;
+            margin-top: 30px;
+        }
+
+        .pencil img {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            left: 14px;
+        }
+
+        .pencil a {
+            color: #FFFFFF;
+            font-size: 18px;
+            font-family: poppins;
+            font-style: normal;
+            font-weight: 700;
+            outline: none;
+            text-decoration: none;
+        }
+        .rightside img {
+            margin-bottom: 30px;
+            width: 446px;
+            height: 548px;
+            margin-right: 79px;
+        }
+        .staremoji p {
+            color: #023047;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125%;
+        }
+
+        .studentenrolled {
+            position: relative;
+            width: 206px;
+            height: 90px;
+            border-radius: 24px;
+            color: #fff;
+            border: 2px solid black;
+        }
+
+        .studentenrolled h1 {
+            position: absolute;
+            top: 14px;
+            right: 60px;
+            width: 68px;
+            height: 45px;
+            color: #023047;
+            font-family: Poppins;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 125%;
+        }
+
+        .studentenrolled p {
+            position: absolute;
+            right: 25px;
+            bottom: 20px;
+            width: 139px;
+            color: #023047;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="firstsection">
+        <div class="head">
+            <h1 class="logo">GD.</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our work</a></li>
+                    <li><a href="#" class="lastli">Enroll now</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="herosection">
+            <div class="leftside">
+                <h1>Learn the art of Game Dev</h1>
+                <p>This is a comprehensive course on Game Development.
+                    You will learn everything from generating an idea to publishing your games to different
+                    platforms.</p>
+                <button class="pencil"><img src="./PencilAlt.svg" alt=""><a href="">Enroll now</a></button>
+            </div>
+
+            <div class="rightside">
+                <img src="./hero-image.png" alt="">
+            </div>
+        </div>
+
+        <div class="studentenrolled">
+            <h1>32k</h1>
+            <p>student enrolled</p>
+        </div>
+        <div class="staremoji">
+            <h1>4.7 <img src="./emojione_star.svg" alt=""></h1>
+            <p>overallRating</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

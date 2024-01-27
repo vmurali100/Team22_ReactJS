@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #main {
+            width: 1366px;
+            background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+            margin: auto;
+            padding-top: 42px;
+        }
+
+        header,
+        #herosection {
+            width: 1134px;
+            margin: auto;
+            display: flex;
+
+        }
+
+        header {
+            justify-content: space-between;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 60px;
+            margin-top: 16px;
+            margin-right: 60px;
+        }
+
+        ul li {
+            color: white;
+        }
+
+        .last-item {
+            background: #023047;
+            padding: 16px 32px;
+            border-radius: 24px;
+            color: white;
+            border: none;c
+        }
+
+        #navarea {
+            display: flex;
+        }
+
+        #herosection {
+            display: flex;
+            justify-content: space-between;
+            /* height: 219px; */
+        }
+
+        .leftside h1 {
+            width: 475px;
+
+            color: white;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 125%;
+            font-style: normal;
+        }
+
+        .leftside p {
+            width: 457px;
+
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 200%;
+            font-style: normal;
+        }
+
+        .leftside button {
+            border-radius: 24px;
+            background: #DA722C;
+            padding: 16px 24px;
+            color: white;
+        }
+
+        .rightside button {
+            border-radius: 24px;
+            padding: 16px 24px;
+            color: black;
+            background: white;
+            color: #023047;
+        }
+
+        .enroll {
+            border: none;
+            margin-top: 30px;
+        }
+
+        .leftside p {
+            color: white;
+            font-size: 16px;
+        }
+
+        .studentEnroll {
+            position: absolute;
+            top: 323px;
+            left: 623px;
+            border-radius: 24px;
+            width: 204px;
+            height: 90px;
+        }
+
+        .overallRating {
+            position: absolute;
+            left: 583px;
+            top: 562px;
+            width: 183px;
+            height: 90px;
+            border-radius: 24px;
+        }
+        .emojione_star{
+            width: 26px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <div id="logoarea">
+                <img src="./Logo.png" alt="">
+            </div>
+            <div id="navarea">
+                <ul>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Our Work</li>
+                </ul>
+                <button class="last-item">Enroll Now</button>
+            </div>
+        </header>
+        <div id="herosection">
+            <div class="leftside">
+                <h1>Learn the art of Game Dev</h1>
+                <p>This is a comprehensive course on Game Development.
+                    You will learn everything from generating an idea to publishing your games to different platforms.
+                </p>
+                <button class="enroll">Enroll Now</button>
+            </div>
+            <div class="rightside">
+                <img src="./hero-image.png" alt="">
+
+            </div>
+
+
+        </div>
+        <button class="studentEnroll">
+            <h1>32k <img src="./emojione_star.svg" alt="" class="emojione_star"> </h1> 
+            <p>student enrolled</p>
+        </button>
+        <button class="overallRating">
+            <h1>4.7 <img src="./emojione_star.svg" alt=""  class="emojione_star"></h1>
+            <p>overall rating</p>
+        </button>
+    </div>
+</body>
+
+</html>
