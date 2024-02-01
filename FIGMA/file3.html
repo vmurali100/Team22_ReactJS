@@ -11,13 +11,19 @@
             padding: 0;
         }
 
-        #firstsection {
+        #main {
+            width: 1366px;
+            height: 3170px;
+            border: 2px solid black;
+        }
+
+        /* end of the main */
+        .firstrow {
             width: 1366px;
             height: 768px;
             background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
         }
 
-        /* Header section */
         .head {
             display: flex;
             justify-content: space-between;
@@ -266,14 +272,19 @@
             height: 34px;
         }
 
-        /* SecondSection */
+        /* firstrow completed */
+
         #secondsection {
             display: flex;
             justify-content: space-between;
             background-color: #FFFFFF;
+            width: 1366px;
+            height: 746px;
+            position: relative;
         }
 
         .leftsection {
+            position: relative;
             margin-top: 135px;
             margin-left: 116px;
             margin-right: 135px;
@@ -370,7 +381,10 @@
             height: 546px;
             margin-left: 203px;
             background: #023047;
+            border-radius: 24px;
+            background: #023047;
             position: absolute;
+            top: 100px;
         }
 
         .rightsection {
@@ -403,7 +417,7 @@
 
         }
 
-        button {
+        #secondsection .rightsection button {
             padding: 16px 32px;
             border-radius: 24px;
             background: #DA722C;
@@ -417,102 +431,305 @@
             line-height: normal;
         }
 
-        /* Thirdsection */
+        /* secondsection completed */
+
         #thirdsection {
             width: 1366px;
             height: 785px;
             background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
-            margin-top: 114px;
+
         }
 
-        #thirdsection h1 {
-            /* display: flex; */
-            width: 524px;
-            /* align-items: flex-start; */
-            /* gap: 10px; */
+        .heading {
+
+            padding-top: 70px;
+            margin: 0 421px;
             text-align: center;
             color: #FFF;
-            text-align: center;
-            font-family: Raleway;
             font-size: 60px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 120%;
-            margin: auto;
         }
 
         .courses {
             display: flex;
             justify-content: space-between;
             margin-top: 56px;
+            gap: 83px;
         }
 
         .crs1 {
             margin-left: 116px;
-
             width: 526px;
             padding: 0px 32px;
-
             border-radius: 24px;
             background: #FFF;
+
         }
 
-        .crs1 img {
+        .crs2 {
+            margin-right: 115px;
+            width: 526px;
+            padding: 0px 32px;
+            border-radius: 24px;
+            background: #FFF;
+
+        }
+
+        img.component {
             height: 260px;
             border-radius: 24px;
             background: url(<path-to-image>), lightgray 50% / cover no-repeat;
             box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+
         }
 
-        .cont {
+        .info {
             display: flex;
             justify-content: space-between;
+            gap: 16px;
+            padding: 30px 32px;
         }
+
+        .crs1 .info .title h2 {
+            color: #023047;
+            font-family: Raleway;
+            font-size: 29px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 150%;
+        }
+
+        .crs2 .info .title h2 {
+            color: #023047;
+            font-family: Raleway;
+            font-size: 29px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 150%;
+        }
+
+        .drt {
+            position: relative;
+            padding-top: 33px;
+            padding-bottom: 33px;
+        }
+
+        .crs1 .info .drt img {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 45px;
+            bottom: 3px;
+            top: 34px;
+        }
+
+        .crs2 .info .drt img {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 45px;
+            bottom: 3px;
+            top: 34px;
+        }
+
+        .crs1 .info .drt a {
+            color: #023047;
+            font-family: Raleway;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 150%;
+            text-decoration: none;
+            margin-left: 41px;
+
+        }
+
+        .crs2 .info .drt a {
+            color: #023047;
+            font-family: Raleway;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 150%;
+            text-decoration: none;
+            margin-left: 41px;
+
+        }
+
+        .rec {
+            height: 8px;
+            align-self: stretch;
+            border-radius: 24px;
+            background: #023047;
+        }
+
+        .btn {
+            margin: 40px 115px 70px 1083px;
+        }
+
+        #thirdsection .btn button {
+            padding: 16px 32px;
+            border-radius: 24px;
+            background: #DA722C;
+            border: none;
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        /* thirdsection completed */
+        div#forthsection {
+            width: 1366px;
+            height: 462px;
+            background: #FFF;
+        }
+
+        h1.app {
+            width: 680px;
+            color: #023047;
+            text-align: center;
+            font-family: Raleway;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 120%;
+            padding-top: 100px;
+            margin-left: 343px;
+            margin-right: 343px;
+            margin-bottom: 13px;
+        }
+
+        #forthsection p {
+            margin-left: 148px;
+            margin-right: 148px;
+            width: 1070px;
+            color: #023047;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 200%;
+        }
+
+        .imgblock {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .block1 {
+            height: 100px;
+            margin-left: 358px;
+            margin-bottom: 100px;
+            margin-top: 45px;
+            display: flex;
+            width: 310px;
+            padding: 20px 31px;
+            align-items: center;
+            gap: 14px;
+            background: #000;
+        }
+
+        img.vect {
+            width: 60px;
+            height: 60px;
+
+        }
+
+        #forthsection .block1 a {
+            color: #FFF;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 200%;
+            text-decoration: none;
+        }
+
+        .block2 {
+            width: 310px;
+            height: 100px;
+            margin-right: 358px;
+            margin-bottom: 100px;
+            margin-top: 45px;
+            display: flex;
+            width: 310px;
+            padding: 20px 31px;
+            align-items: center;
+            gap: 14px;
+            background: #000;
+        }
+
+        img.group {
+            width: 55.713px;
+            height: 60px;
+
+        }
+
+        #forthsection .block2 a {
+            color: #FFF;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 200%;
+            text-decoration: none;
+        }
+
+        /* forthsection completed */
     </style>
 </head>
 
 <body>
-    <div id="firstsection">
-        <div class="head">
-            <h1 class="logo">GD.</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Our work</a></li>
-                    <li><a href="#" class="lastli">Enroll now</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div id="herosection">
-            <div class="leftside">
-                <h1>Learn the art of Game Dev</h1>
-                <p>This is a comprehensive course on Game Development.
-                    You will learn everything from generating an idea to publishing your games to different
-                    platforms.</p>
-                <button class="pencil"><img src="./PencilAlt.svg" alt=""><a href="">Enroll now</a></button>
+    <div id="main">
+        <div class="firstrow">
+            <div class="head">
+                <h1 class="logo">GD.</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Our work</a></li>
+                        <li><a href="#" class="lastli">Enroll now</a></li>
+                    </ul>
+                </nav>
             </div>
+            <div id="herosection">
+                <div class="leftside">
+                    <h1>Learn the art of Game Dev</h1>
+                    <p>This is a comprehensive course on Game Development.
+                        You will learn everything from generating an idea to publishing your games to different
+                        platforms.</p>
+                    <button class="pencil"><img src="./PencilAlt.svg" alt=""><a href="">Enroll now</a></button>
+                </div>
 
-            <div class="rightside">
-                <img src="./hero-image.png" alt="">
+                <div class="rightside">
+                    <img src="./hero-image.png" alt="">
+                </div>
+            </div>
+            <div class="button1">
+                <div class="studentenrolled">
+                    <h1>32k</h1>
+                    <p>student enrolled</p>
+                </div>
+            </div>
+            <div class="button2">
+                <div class="staremoji">
+                    <h1> 4.7 <img src="./emojione_star.svg" alt=""></h1>
+                    <p>overallRating</p>
+                </div>
             </div>
         </div>
-        <div class="button1">
-            <div class="studentenrolled">
-                <h1>32k</h1>
-                <p>student enrolled</p>
-            </div>
-        </div>
-        <div class="button2">
-            <div class="staremoji">
-                <h1> 4.7 <img src="./emojione_star.svg" alt=""></h1>
-                <p>overallRating</p>
-            </div>
-        </div>
-        <!-- end of the firstsection -->
+        <!--firstsection completed -->
         <div id="secondsection">
+            <div class="pole"></div>
             <div class="leftsection">
-                <div class="pole"></div>
+
                 <div class="card1">
                     <div class="content">This is a great course. It helped me a lot. Thank you :)</div>
                     <div class="info">
@@ -546,36 +763,103 @@
                 <button>learnmore</button>
             </div>
         </div>
-        <!-- end of the secondsection -->
+        <!--secondsection completed -->
         <div id="thirdsection">
-            <h1>Our Courses</h1>
+
+            <h1 class="heading">Our Courses</h1>
             <div class="courses">
                 <div class="crs1">
-                    <img src="./Rectangle 7 (3).png" alt="">
-                    <div class="cont">
-                        <h1>Game Design Essentials</h1>
-                        <h3>
-                            <img src="./Clock.svg" alt="">
-                            8 HRS
-                        </h3>
-                        <div class="rect"></div>
+                    <img src="./Rectangle 7 (3).png" alt="" class="component">
+                    <div class="info">
+                        <div class="title">
+                            <h2>Game Design Essentials</h2>
+                        </div>
+                        <div class="drt">
+                            <img src="./Clock.svg" alt=""><a href="">8 HRS</a>
+                        </div>
+
                     </div>
+                    <div class="rec"></div>
                 </div>
+
                 <div class="crs2">
-                    <img src="./Rectangle 7 (2).png" alt="">
-                    <div class="cont">
-                        <h1>Unity Game Engine Fundamentals</h1>
-                        <h3>
-                            <img src="./Clock.svg" alt="">
-                            8 HRS
-                        </h3>
-                        <div class="rect"></div>
+                    <img src="./Rectangle 7 (2).png" alt="" class="component">
+                    <div class="info">
+                        <div class="title">
+                            <h2>Unity Game Engine Fundamentals</h2>
+                        </div>
+                        <div class="drt">
+                            <img src="./Clock.svg" alt=""><a href="">8HRS</a>
+                        </div>
                     </div>
+                    <div class="rec"></div>
                 </div>
             </div>
-            <button>All courses</button>
+            <div class="btn"><button>All Courses</button>
+            </div>
         </div>
-    </div>
+        <!--thirdsection completed -->
+        <div id="forthsection">
+            <h1 class="app">Get our App</h1>
+            <p>You can use our App for better experience on smartphones</p>
+            <div class="imgblock">
+                <div class="block1">
+                    <img src="./Vector.png" alt="" class="vect">
+                    <a href="">App Store</a>
+                </div>
+                <div class="block2">
+                    <img src="./Group 8.jpg" alt="" class="group">
+                    <a href="">Google Play</a>
+                </div>
+            </div>
+        </div>
+        <!-- forthsection completed -->
+        <div id="lastsection">
+            <section class="nav1">
+                <nav>
+                    <ul>
+                        <li><a href="">Quick Links</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="nav2">
+                <nav>
+                    <ul>
+                        <li><a href="">Course</a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">Download</a></li>
+                        <li><a href="">All Courses</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="nav3">
+                <nav>
+                    <ul>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Contact@email.com</a></li>
+                        <li><a href="">
+                            <img src="./fac img.svg" alt="" class="Facebook">
+                            <img src="./insta img.svg" alt="" class="insta">
+                        </a></li>
+                        <li>
+                           <form action="">
+                            <input type="text" placeholder="Email Addres">
+                            <input type="text" id="sub" value="Subscribe">
+                           </form>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+
+
+
+
 
 </body>
 
