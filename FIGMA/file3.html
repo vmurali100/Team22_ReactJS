@@ -682,6 +682,161 @@
         }
 
         /* forthsection completed */
+        #lastsection {
+            width: 1366px;
+            height: 409px;
+            background: #070917;
+            border: 2px solid purple;
+        }
+
+        #lastsection .navs {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .navs .nav1 {
+            border: 2px solid white;
+            width: 179px;
+            height: 205px;
+            margin: 70px 132px 134px 116px;
+        }
+
+        .navs .nav2 {
+            border: 2px solid white;
+            width: 112px;
+            height: 164px;
+            margin: 70px 132px 175px 0;
+        }
+
+        .navs .nav3 {
+            border: 2px solid white;
+            width: 545px;
+            height: 187px;
+            margin: 70px 150px 152px 0;
+
+        }
+
+        .navs .nav1 ul {
+            list-style: none;
+
+        }
+
+        .navs .nav2 ul {
+            list-style: none;
+
+        }
+
+        .navs .nav3 ul {
+            list-style: none;
+
+        }
+
+        .navs .nav1 ul h2 {
+            font-size: 18px;
+            font-style: normal;
+            font-family: raleway;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            padding: 0 0 10px 0;
+            padding-top: 6px;
+        }
+
+        .navs .nav2 ul h2 {
+            font-size: 18px;
+            font-style: normal;
+            font-family: raleway;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            padding: 0 0 10px 0;
+            padding-top: 6px;
+        }
+
+        .navs .nav3 ul h2 {
+            font-size: 18px;
+            font-style: normal;
+            font-family: raleway;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            padding: 0 0 10px 0;
+            padding-top: 6px;
+        }
+
+        .navs .nav1 ul h2 a {
+            outline: none;
+            text-decoration: none;
+            color: #FF9900;
+        }
+
+        .navs .nav2 ul h2 a {
+            outline: none;
+            text-decoration: none;
+            color: #FF9900;
+        }
+
+        .navs .nav3 ul h2 a {
+            outline: none;
+            text-decoration: none;
+            color: #FF9900;
+        }
+
+
+        .navs .nav1 ul li {
+            margin: 0 0 8px 0;
+            padding: 0 0 8px 0;
+            font-size: 16px;
+            font-style: normal;
+            font-family: poppins;
+            line-height: 125%;
+        }
+
+        .navs .nav2 ul li {
+            margin: 0 0 8px 0;
+            padding: 0 0 8px 0;
+            font-size: 16px;
+            font-style: normal;
+            font-family: poppins;
+            line-height: 125%;
+        }
+
+        .navs .nav3 ul li {
+            margin: 0 0 8px 0;
+            padding: 0 0 8px 0;
+            font-size: 16px;
+            font-style: normal;
+            font-family: poppins;
+            line-height: 125%;
+        }
+
+        .navs .nav1 ul li a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        .navs .nav2 ul li a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        .navs .nav3 ul li a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        .navs .nav1 ul .lastli {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navs .nav2 ul .lastli {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navs .nav3 ul .lastli {
+            margin: 0;
+            padding: 0;
+        }
     </style>
 </head>
 
@@ -815,45 +970,44 @@
         </div>
         <!-- forthsection completed -->
         <div id="lastsection">
-            <section class="nav1">
-                <nav>
+            <section class="navs">
+                <nav class="nav1">
                     <ul>
-                        <li><a href="">Quick Links</a></li>
+                        <h2><a href="">Quick Links</a></h2>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Contact Us</a></li>
                         <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Terms and Conditions</a></li>
+                        <li class="lastli"><a href="">Terms and Conditions</a></li>
                     </ul>
                 </nav>
-            </section>
-            <section class="nav2">
-                <nav>
+                <nav class="nav2">
                     <ul>
-                        <li><a href="">Course</a></li>
+                        <h2><a href="">Course</a></h2>
                         <li><a href="">Login</a></li>
                         <li><a href="">Download</a></li>
                         <li><a href="">All Courses</a></li>
                     </ul>
                 </nav>
-            </section>
-            <section class="nav3">
-                <nav>
+                <nav class="nav3">
                     <ul>
-                        <li><a href="">Contact Us</a></li>
+                        <h2><a href="">Contact Us</a></h2>
                         <li><a href="">Contact@email.com</a></li>
-                        <li><a href="">
-                            <img src="./fac img.svg" alt="" class="Facebook">
-                            <img src="./insta img.svg" alt="" class="insta">
-                        </a></li>
-                        <li>
-                           <form action="">
-                            <input type="text" placeholder="Email Addres">
-                            <input type="text" id="sub" value="Subscribe">
-                           </form>
+                        <li class="social-img">
+                                <img src="./fac img.svg" alt="" class="Facebook">
+                                <img src="./insta img.svg" alt="" class="insta">
+                        </li>
+                        <li class="form">
+                            <form action="">
+                                <input type="text" placeholder="Email Addres">
+                                <!-- <input type="text" id="sub" value="Subscribe"> -->
+                                <button class="last_button">Subscribe</button>
+                            </form>
                         </li>
                     </ul>
                 </nav>
+
             </section>
+            <p>This website is developed by GTCoding © 2021</p>
         </div>
 
 
