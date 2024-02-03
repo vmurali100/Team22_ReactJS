@@ -14,7 +14,8 @@
         #main {
             width: 1366px;
             height: 3170px;
-            border: 2px solid black;
+            overflow: hidden;
+
         }
 
         /* end of the main */
@@ -686,31 +687,28 @@
             width: 1366px;
             height: 409px;
             background: #070917;
-            border: 2px solid purple;
+
         }
 
-        #lastsection .navs {
-            display: flex;
-            justify-content: space-between;
-        }
+
 
 
         .navs .nav1 {
-            border: 2px solid white;
+
             width: 179px;
             height: 205px;
             margin: 70px 132px 134px 116px;
         }
 
         .navs .nav2 {
-            border: 2px solid white;
+
             width: 112px;
             height: 164px;
             margin: 70px 132px 175px 0;
         }
 
         .navs .nav3 {
-            border: 2px solid white;
+
             width: 545px;
             height: 187px;
             margin: 70px 150px 152px 0;
@@ -735,8 +733,6 @@
         .navs .nav1 ul h2 {
             font-size: 18px;
             font-style: normal;
-            font-family: raleway;
-            font-weight: bold;
             margin: 0 0 10px 0;
             padding: 0 0 10px 0;
             padding-top: 6px;
@@ -782,19 +778,23 @@
 
 
         .navs .nav1 ul li {
-            margin: 0 0 8px 0;
-            padding: 0 0 8px 0;
+            margin: 0 0 6px 0;
+            padding: 0 0 6px 0;
             font-size: 16px;
+            font-weight: 400;
+            height: 32px;
             font-style: normal;
             font-family: poppins;
             line-height: 125%;
         }
 
         .navs .nav2 ul li {
-            margin: 0 0 8px 0;
-            padding: 0 0 8px 0;
+            margin: 0 0 6px 0;
+            padding: 0 0 6px 0;
             font-size: 16px;
             font-style: normal;
+            font-weight: 400;
+            height: 32px;
             font-family: poppins;
             line-height: 125%;
         }
@@ -806,6 +806,7 @@
             font-style: normal;
             font-family: poppins;
             line-height: 125%;
+
         }
 
         .navs .nav1 ul li a {
@@ -836,6 +837,71 @@
         .navs .nav3 ul .lastli {
             margin: 0;
             padding: 0;
+        }
+
+        .nav3 ul .social-img {
+            margin: 0 0 8px 0;
+            padding: 0 0 8px 0;
+            font-size: 16px;
+            font-style: normal;
+            font-family: poppins;
+            line-height: 125%;
+        }
+
+        img.Facebook {
+            margin-left: 26px;
+        }
+
+        img.insta {
+            margin-left: 28px;
+        }
+
+        .navs .nav3 ul li a {
+            text-decoration: none;
+            color: #FFFFFF;
+            margin-left: 26px;
+        }
+
+        form {
+            margin-top: 26px;
+            margin-left: 26px;
+            position: relative;
+        }
+
+        input[type="text"] {
+            width: 517px;
+            height: 39px;
+            border-radius: 8px;
+        }
+
+        button.last_button {
+            position: absolute;
+            left: 378px;
+            TOP: 6PX;
+            width: 135px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #023047;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+
+
+        .copyright {
+            width: 367px;
+            height: 37px;
+            margin-top: 36px;
+            margin-left: 116px;
+
+        }
+
+        section.navs {
+            display: flex;
+            justify-content: space-between;
+            height: 275px;
         }
     </style>
 </head>
@@ -970,6 +1036,7 @@
         </div>
         <!-- forthsection completed -->
         <div id="lastsection">
+            <!-- <div class="section"> -->
             <section class="navs">
                 <nav class="nav1">
                     <ul>
@@ -993,21 +1060,28 @@
                         <h2><a href="">Contact Us</a></h2>
                         <li><a href="">Contact@email.com</a></li>
                         <li class="social-img">
-                                <img src="./fac img.svg" alt="" class="Facebook">
-                                <img src="./insta img.svg" alt="" class="insta">
+                            <img src="./fac img.svg" alt="" class="Facebook">
+                            <img src="./insta img.svg" alt="" class="insta">
                         </li>
-                        <li class="form">
+                        <div class="lastli">
                             <form action="">
                                 <input type="text" placeholder="Email Addres">
-                                <!-- <input type="text" id="sub" value="Subscribe"> -->
                                 <button class="last_button">Subscribe</button>
                             </form>
-                        </li>
+                        </div>
                     </ul>
                 </nav>
 
+
             </section>
-            <p>This website is developed by GTCoding © 2021</p>
+            <div class="copyright">
+                <p>This website is developed by GTCoding © 2021</p>
+            </div>
+
+
+
+
+
         </div>
 
 
